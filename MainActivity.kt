@@ -11,14 +11,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Referências aos elementos da interface
+       
         val editTextNumero1 = findViewById<EditText>(R.id.editTextNumero1)
         val editTextNumero2 = findViewById<EditText>(R.id.editTextNumero2)
         val buttonSomar = findViewById<Button>(R.id.buttonSomar)
         val buttonSubtrair = findViewById<Button>(R.id.buttonSubtrair)
         val textViewResultado = findViewById<TextView>(R.id.textViewResultado)
 
-        // Função para somar os números
+        
         buttonSomar.setOnClickListener {
             val num1Str = editTextNumero1.text.toString()
             val num2Str = editTextNumero2.text.toString()
@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Função para subtrair os números
         buttonSubtrair.setOnClickListener {
             val num1Str = editTextNumero1.text.toString()
             val num2Str = editTextNumero2.text.toString()
